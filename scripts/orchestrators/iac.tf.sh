@@ -100,6 +100,8 @@ preview() {
 
   set_subscription_id_env
 
+  env
+
   _information "Execute terraform plan"
   if [[ -z "$2" ]]; then
     echo "terraform plan -input=false -out=${plan_file_name}"
